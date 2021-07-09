@@ -25,7 +25,7 @@
         <div class="dropdown ml-auto" *ngIf="(accountService.currentUser$ | async) as users" dropdown>
           <a class="dropdown-toggle text-light" dropdownToggle>Welcome {{users.userName}}</a>
           <div class="dropdown-menu mt-3" *dropdownMenu>
-            <a href="" class="dropdown-item">Edit Profile
+            <a routerLink='member/edit' class="dropdown-item">Edit Profile
               <div class="dropdown-divider"></div>
             </a>
             <a href="" class="dropdown-item" (click)="logout()">Logout</a>
